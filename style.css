@@ -33,8 +33,22 @@ input {
 button:hover {
     cursor: pointer;
 }
-
-div {
-    width:1em;
-    background: radial-gradient(#FFFFFF, #CAEFFB);
+section {
+    width: 100%;
+    margin: auto;
+    margin-top: 2.5em;
+    display: flex;
+    display: -webkit-flexbox;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+div {
+    width: 48%;
+    min-width: 400px;
+    height: 45em;
+}
+#rigth {
+    border-left: 2px solid white;
+}
+
