@@ -1,1 +1,40 @@
 
+body {
+    background: #CAEFFB;
+}
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+form {
+    width: 90%;
+    display: flex;
+    display: -webkit-flexbox;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid white;
+    border-radius: 2em;
+    background: radial-gradient(#FFFFFF, #CAEFFB);
+}
+
+input, button, label {
+    display: inline-block;
+    font: 1.1em sans-serif;
+    width: 100px;
+    height: 27px;
+    vertical-align: top;
+}
+input {
+    width: 200px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+div {
+    width:1em;
+    background: radial-gradient(#FFFFFF, #CAEFFB);
+}
