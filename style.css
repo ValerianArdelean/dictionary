@@ -17,8 +17,6 @@ form {
     width: 90%;
     margin: auto;
     padding: 3em;
-    border: 1px solid white;
-    border-radius: 2em;
     background: radial-gradient(#FFFFFF, #CAEFFB);
 }
 
