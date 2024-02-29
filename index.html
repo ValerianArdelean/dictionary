@@ -10,18 +10,18 @@
             <fieldset>
                 <label for="search">Search word</label>
                 <input type="text" id="search" name="search" />
-                <button id="searchBttn" type="submit">SEARCH</button>
+                <button id="searchBttn" onclick="searchWord(); return false;">SEARCH</button>
             </fieldset>
             <fieldset>
                 <label for="word">Add word</label>
                 <input type="text" id="word" name="word" />
-                <button id="insertBttn" type="submit">INSERT</button>
+                <button id="insertBttn" onclick="insertWord(); return false;">INSERT</button>
             </fieldset>
         </form>
         <section class="flex">
-            <div id="left">
+            <div id="searchResult">
             </div>
-            <div id="rigth">
+            <div id="insertResult">
             </div>
         </section>
         <script defer src="script.js"></script>

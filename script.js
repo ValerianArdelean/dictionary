@@ -1,25 +1,29 @@
 let words = [];
+let n = parseInt(words.length);
 
-document.getElementById("searchBttn").addEventListener("click", function(event) {
-    event.preventDefault();
-    let searchedWord = event.srcElement.form[1].value;
-    let searchResult = words.includes(searchedWord);
+function searchWord() {
     let p = document.createElement("p");
-    p.innerText = `The searched word: "${searchedWord}" is NOT present in our list !`;
-    if (searchResult) {
-        p.innerText = `The searched word: "${searchedWord}" it IS present in our list ! `;
+    let searchedWord = document.getElementById("search").value;
+    p.innerText = `The word: "${searchedWord}" is NOT present in our list`;
+    if (words.includes(searchedWord)) {
+        p.innerText = `The word: "${searchedWord}" is present in our list`;
     }
-    document.getElementById("left").appendChild(p);
-});
+    document.getElementById("searchResult").appendChild(p);
+};
 
-document.getElementById("insertBttn").addEventListener("click", function(event2) {
-    event2.preventDefault();
-    let insertededWord = event2.srcElement.form[4].value;
-    let o = words.push(insertededWord);
+function insertWord() {
     let p = document.createElement("p");
-    p.innerText = "success";
-    let parrent = document.getElementById("rigth");
-    parrent.appendChild(p)
-});
+    p.innerText = "failed !";
+    let insertededWord = document.getElementById("word").value;
+    if (insertededWord != "") {
+        let o = words.push(insertededWord);
+        if (parseInt(o) === n + 1) {
+            ++n;
+            p.innerText = "success !";
+        }
+    }
+    document.getElementById("insertResult").appendChild(p);
+};
+
 
 
