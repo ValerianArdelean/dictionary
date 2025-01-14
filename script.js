@@ -13,8 +13,8 @@ function searchWord() {
 
 function insertWord() {
     let p = document.createElement("p");
-    p.innerText = "failed !";
     let insertededWord = document.getElementById("word").value;
+    p.innerText = "failed !";
     if (insertededWord != "") {
         let o = words.push(insertededWord);
         if (parseInt(o) === n + 1) {
