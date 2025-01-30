@@ -1,4 +1,4 @@
-# Hidden Button
+# Dictionary
 
 <figure style="text-align: center;">
     <picture>
