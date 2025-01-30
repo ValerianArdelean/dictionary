@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #CAEFFB;
+	background: #CAEFFB;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
