@@ -5,7 +5,7 @@
         <img src="assets/preview.png" alt="Screen shot of the app" 
 style="max-width: 100%; height: auto;">
     </picture>
-    <figcaption>Screen shot of the app showing the two forms 
+    <figcaption>Screenshot of the app showing the two forms 
 for sarching and adding a word in the dictionary</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ of the search. The word either it is or not in the dictionary.</li>
 
 Enjoy!
 
-##
+#
 
 The content of this repository is licensed under a [Creative Commons 
 Attribution License.](https://creativecommons.org/licenses/by/4.0/deed.en)
