@@ -43,7 +43,7 @@ p, h1 {
 }
 
 input, button, label, fieldset {
-    min-width: 200px;
+	min-width: 200px;
 	padding: 10px;
 	border: 0px;
 }
