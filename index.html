@@ -5,25 +5,34 @@
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <h1>DICTIONARY</h1>
-        <form class="flex">
-            <fieldset>
-                <label for="search">Search word</label>
-                <input type="text" id="search" name="search" />
-                <button id="searchBttn" onclick="searchWord(); return false;">SEARCH</button>
-            </fieldset>
-            <fieldset>
-                <label for="word">Add word</label>
-                <input type="text" id="word" name="word" />
-                <button id="insertBttn" onclick="insertWord(); return false;">INSERT</button>
-            </fieldset>
-        </form>
-        <section class="flex">
-            <div id="searchResult">
-            </div>
-            <div id="insertResult">
-            </div>
-        </section>
+		<header>
+			<h1 class="text color alignTextCenter">DICTIONARY</h1>
+		</header>
+        <main>
+			<section class="flex text">
+				<form onsubmit="searchWord(); return false;">
+					<label for="search" id="label">Search for a word</label>
+					<div class="flex">
+						<input type="text" id="search" name="search"/>
+						<button type="submit" id="searchBttn" >SEARCH</button>
+					</div>
+				</form>
+				<form onsubmit="insertWord(); return false;">
+					<label for="word">Add a word</label>
+					<div class="flex">
+						<input type="text" id="word" name="word"/>
+						<button type="submit" id="insertBttn">INSERT</button>
+					</div>
+				</form>
+			</section>
+			<section class="flex2 text">
+				<div id="searchResult"></div>
+				<div id="insertResult"></div>
+			</section>
+		</main>
+		<footer>
+			<p class="text color fade alignTextCenter">Made with &hearts; by Valerian @ WellCode.</p>
+		</footer>
         <script defer src="script.js"></script>
     </body>
 </html>

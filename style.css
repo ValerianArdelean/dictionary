@@ -1,51 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
 body {
     background: #CAEFFB;
-}
-h1, p {
-    text-align: center;
-    margin: 1em;
-}
-.flex {
-    display: flex;
-    display: -webkit-flexbox;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-}
-form {
-    width: 90%;
-    margin: auto;
-    padding: 3em;
-    background: radial-gradient(#FFFFFF, #CAEFFB);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding-top: 20px;
 }
 
-input, button, label {
-    display: inline-block;
-    font: 1.1em sans-serif;
-    width: 100px;
-    height: 27px;
-    vertical-align: top;
+main {
+	flex-grow: 1;
 }
-input {
-    width: 200px;
+
+p, h1 {
+	margin-top: 5px;
 }
+
+.flex, .flex2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flex2 {
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+#searchResult, #insertResult {
+	display: inline;
+	width: 50%;
+	margin: 10px;
+	text-align: right;
+}
+
+#insertResult {
+	text-align: left;
+}
+
+input, button, label, fieldset {
+    min-width: 200px;
+	padding: 10px;
+	border: 0px;
+}
+
+label {
+	display: block;
+	background-color: #C75050;
+	color: white;
+}
+
+form {
+	margin: 10px;
+	margin-top: 20px;
+}
+
+button {
+	min-width: 100px;
+}
+
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
-section {
-    width: 100%;
-    margin: auto;
-    margin-top: 2.5em;
+
+.text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
-div {
-    width: 49%;
-    min-width: 300px;
-    height: 45em;
+
+.alignTextCenter {
+	text-align: center;
 }
-#rigth {
-    border-left: 2px solid white;
+
+.color {
+	color: #C75050;
 }
-p {
-    font-size: 1.5em;
+
+.fade {
+	opacity: 30%;
 }
