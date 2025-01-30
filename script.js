@@ -9,7 +9,6 @@ function searchWord() {
         p.innerText = `The word "${searchedWord.value}" is present in our list`;
     }
     document.getElementById("searchResult").appendChild(p);
-	searchedWord.value = '';
 };
 
 function insertWord() {
@@ -24,7 +23,6 @@ function insertWord() {
         }
     }
     document.getElementById("insertResult").appendChild(p);
-	insertededWord.value = '';
 };
 
 
