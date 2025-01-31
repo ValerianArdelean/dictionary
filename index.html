@@ -20,14 +20,14 @@
 				<form onsubmit="insertWord(); return false;">
 					<label for="word">Add a word</label>
 					<div class="flex">
-						<input type="text" id="word" name="word"/>
+						<input type="text" id="word" name="word" placeholder="Search for a word"/>
 						<button type="submit" id="insertBttn">INSERT</button>
 					</div>
 				</form>
 			</section>
 			<section class="flex2 text">
-				<div id="searchResult"></div>
-				<div id="insertResult"></div>
+				<div id="searchResult" aria-live="polite"></div>
+				<div id="insertResult" aria-live="polite"></div>
 			</section>
 		</main>
 		<footer>
