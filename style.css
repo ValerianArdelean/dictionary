@@ -91,6 +91,7 @@ button:hover {
 	.flex2 {
 		flex-direction: column;
 	}
+	
 	#searchResult, #insertResult {
 		width: 90%;
 		text-align: center;
