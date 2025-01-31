@@ -65,6 +65,8 @@ button {
 
 button:hover {
 	cursor: pointer;
+	background-color: #CAEFFB;
+	transition: 0.3s ease-in-out;
 }
 
 .text {
@@ -83,4 +85,14 @@ button:hover {
 
 .fade {
 	opacity: 30%;
+}
+
+@media (max-width: 600px) {
+	.flex2 {
+		flex-direction: column;
+	}
+	#searchResult, #insertResult {
+		width: 90%;
+		text-align: center;
+	}
 }
